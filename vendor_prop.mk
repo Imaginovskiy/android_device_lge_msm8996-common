@@ -183,13 +183,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.qualcomm.sns.libsensor1=e \
     persist.sensors.lgpickup_en=true \
     persist.sensors.mag_filter_size=8 \
-    persist.sensors.knock_delay=1000 \
-    persist.sensors.wul_multilevel=3 \
+    persist.sensors.knock_delay=700 \
+    persist.sensors.pocket_delay=350 \
+    persist.sensors.wul_multilevel=6 \
     persist.sensors.wul_thresh0=2 \
     persist.sensors.wul_thresh1=10 \
     persist.sensors.wul_thresh2=15 \
+    persist.sensors.wul_thresh3=1500 \
+    persist.sensors.wul_thresh4=3100 \
+    persist.sensors.wul_thresh5=10000 \
     persist.sensors.wul_delay=3000 \
     persist.sensors.onhand.en=0
+
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -203,3 +208,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Display power reduction (FOSS) 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qcom.dpps.sensortype=3 \
+    ro.qualcomm.display.paneltype=1 \
+    ro.qualcomm.foss=1 \
+    config.foss.xml=1 \
+    config.foss.path=/vendor/etc/FOSSConfig.xml
