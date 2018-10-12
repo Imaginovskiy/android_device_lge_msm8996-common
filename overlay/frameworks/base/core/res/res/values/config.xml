@@ -18,7 +18,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
@@ -356,7 +355,4 @@
          brightening or dimming debounce thresholds.  As a result, it may take somewhat longer to
          adapt to the environment.  This mode may be better suited for watches. -->
     <bool name="config_autoBrightnessResetAmbientLuxAfterWarmUp">true</bool>
-
-    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
-    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 </resources>
